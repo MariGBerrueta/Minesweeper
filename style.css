@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #345d7a;
+}
+
+* h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f67782;
+  font-size: 1.5rem;
+}
+
+* p, * label, * form {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.title {
+  height: 100px;
+  border: none;
+  box-shadow: 5px 5px 5px #695d79;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.title h1 {
+  color: #f67782;
+  font-size: 3rem;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.game .instructions {
+  flex: 1;
+}
+
+.game .instructions h2 {
+  padding: 5% 0 3% 5%;
+}
+
+.game .instructions p {
+  padding: 0 5% 3% 5%;
+}
+
+.game .play {
+  flex: 1.5;
+}
+
+.play {
+  display: flex;
+  flex-direction: column;
+}
+
+.play .form h2 {
+  margin-top: 25px;
+}
+
+.play .form input {
+  margin-top: 10px;
+}
+
+.play .playground {
+  display: flex;
+  justify-content: center;
+}
+
+.boardb {
+  width: 250px;
+}
+
+.boardb .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #695d79;
+  height: 50px;
+}
+
+.boardb .top .topSquares {
+  width: 25%;
+  height: 70%;
+  background-color: #f7b59c;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boardb .top .reset .far {
+  background-color: #f7b59c;
+  color: #695d79;
+  cursor: pointer;
+  display: block;
+}
+
+.boardb .grid {
+  height: 199px;
+  border: 5px solid #695d79;
+}
+
+.boardb .grid .win {
+  z-index: 100;
+  display: none;
+  position: absolute;
+  background-color: #f67782;
+  border: 5px solid white;
+  height: 60px;
+  width: 150px;
+  margin-top: 3%;
+  margin-left: 3%;
+  text-align: center;
+}
+
+.boardb .grid .win p {
+  color: white;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  background-color: #f67782;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.boardb .grid table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.boardb .grid table .cell {
+  border: 1.5px solid #f7b59c;
+  box-shadow: 2.5px 2.5px 5.5px #695d79;
+  height: 19.5px;
+  width: 5px;
+  cursor: pointer;
+  text-align: center;
+  font-size: smaller;
+  color: #463e52;
+  background-color: #463e52;
+}
+
+.boardb .grid table #cellsWithMine {
+  background-color: #f67782;
+  color: #fff;
+}
+
+.boardb .grid table .clicked {
+  background-color: #f7b59c;
+  text-emphasis: bold;
+}
+
+.boardb .grid table #cellNo {
+  background-color: lightblue;
+}
+
+.boardb .grid table .guess {
+  background-color: red;
+}
+
+.boardi {
+  width: 400px;
+}
+
+.boardi .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #695d79;
+  height: 50px;
+}
+
+.boardi .top .topSquares {
+  width: 25%;
+  height: 70%;
+  background-color: #f7b59c;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boardi .top .reset .far {
+  background-color: #f7b59c;
+  color: #695d79;
+  cursor: pointer;
+  display: block;
+}
+
+.boardi .grid {
+  height: 317px;
+  border: 5px solid #695d79;
+}
+
+.boardi .grid .win {
+  z-index: 100;
+  display: none;
+  position: absolute;
+  background-color: #f67782;
+  border: 5px solid white;
+  height: 80px;
+  width: 200px;
+  margin-top: 6%;
+  margin-left: 4.8%;
+  text-align: center;
+}
+
+.boardi .grid .win p {
+  color: white;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  background-color: #f67782;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.boardi .grid table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.boardi .grid table .cell {
+  border: 1.5px solid #f7b59c;
+  box-shadow: 2.5px 2.5px 5.5px #695d79;
+  height: 16px;
+  width: 19px;
+  cursor: pointer;
+  text-align: center;
+  font-size: smaller;
+  color: #463e52;
+  background-color: #463e52;
+}
+
+.boardi .grid table #cellsWithMine {
+  background-color: #f67782;
+  color: #fff;
+}
+
+.boardi .grid table .clicked {
+  background-color: #f7b59c;
+  text-emphasis: bold;
+}
+
+.boardi .grid table #cellNo {
+  background-color: lightblue;
+}
+
+.boardi .grid table .guess {
+  background-color: red;
+}
+/*# sourceMappingURL=style.css.map */

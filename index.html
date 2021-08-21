@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ac26fa1304.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="title">
+        <h1>Minesweeper</h1>
+    </div>
+    <section class="game">
+        <div class="instructions">
+            <h2>Instructions</h2>
+            <p>The board to your right contains hidden mines, signalized by an X. If you open a cell with a mine, you lose! If you open all cells without a mine, you win! The beginner level has 10 hidden mines. The intermediate has 25 mines.</p>
+            <p>A right-click will open the cell, and a left click will change the cell's background to red and decrease the mine counter by one.</p>
+            <p>Cells without a mine have a number that indicates the number of mines around them. Use these clues to win. </p>
+            <p>If you want to <strong>RESET</strong> the game, click the face on top of the board</p>
+            <p>Good Luck!</p>
+        </div>
+        <div class="play">
+            <div class="form">
+                <h2>1. Choose your level</h2>
+                <form>
+                    <input type="radio" id="beginnerLevel" name="level" checked>
+                    <label for="beginnerLevel">Beginner</label>
+
+                    <input type="radio" id="intermediateLevel" name="level">
+                    <label for="intermediateLevel">Intermediate</label>
+
+                </form>
+                <h2>2. Play!</h2>
+            </div>
+            <div class="playground">
+                <div id="board">
+                    <div class="top">
+                        <div class="numOfMines topSquares" id="minesToDiscover"></div>
+                        <div class="reset topSquares" id="reset"><i class="far fa-smile fa-2x"></i><i class="far fa-frown fa-2x"></i></div>
+                        <div class="stopwatch topSquares" id="stopwatch">00:00:00</div>
+                    </div>
+                    <div class="grid" id="grid">
+                        <div class="win" id="win"><p>You win!</p></div>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <script src="./minesweeper.js"></script>
+</body>
+</html>
